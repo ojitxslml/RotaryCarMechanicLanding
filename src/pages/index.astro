@@ -1,0 +1,595 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+---
+
+<Layout title="RotaryWorks | Expert Mazda Rotary Engine Mechanics – Santiago, Chile">
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <!-- Rotor SVG Logo -->
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="rotor-spin">
+          <path d="M50 8 L92 75 L8 75 Z" fill="none" stroke="#e74c3c" stroke-width="3" stroke-linejoin="round"/>
+          <circle cx="50" cy="53" r="10" fill="none" stroke="#e74c3c" stroke-width="2"/>
+          <circle cx="50" cy="53" r="3" fill="#e74c3c"/>
+        </svg>
+        ROTARY<span class="logo-accent">WORKS</span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#services">Services</a>
+        <a href="#fleet">Cars</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#location">Location</a>
+        <a href="#contact" class="nav-cta">Book Now</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-image">
+      <img src="/rx7-fd.png" alt="Mazda RX-7 FD in dark red lighting" />
+    </div>
+    <div class="hero-gradient"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 10 L88 72 L12 72 Z" fill="#e74c3c"/>
+          </svg>
+          Rotary Specialists Since 2005
+        </div>
+
+        <h1 class="hero-title">
+          The Art of the<br/>
+          <span class="accent">Rotary Engine</span>
+        </h1>
+
+        <p class="hero-description">
+          Santiago's premier Mazda rotary engine workshop. We live and breathe Wankel — from full 13B-REW rebuilds to precision port work. Your RX-7 and RX-8 deserve nothing less than mastery.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary" id="hero-cta-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Schedule Service
+          </a>
+          <a href="#fleet" class="btn-outline" id="hero-cta-secondary">
+            Explore Our Work
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number">500+</div>
+            <div class="hero-stat-label">Engines Rebuilt</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">20</div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">100%</div>
+            <div class="hero-stat-label">Rotary Focus</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-rotor-container">
+          <div class="hero-rotor-ring"></div>
+          <div class="hero-rotor-ring"></div>
+          <div class="hero-rotor-ring"></div>
+          <!-- Large Spinning Rotor -->
+          <svg class="hero-rotor-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="rotorGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#e74c3c"/>
+                <stop offset="50%" stop-color="#c0392b"/>
+                <stop offset="100%" stop-color="#8b1a1a"/>
+              </linearGradient>
+            </defs>
+            <path d="M100 15 L185 150 L15 150 Z" fill="url(#rotorGrad)" opacity="0.9" stroke="#ff2d2d" stroke-width="1"/>
+            <circle cx="100" cy="105" r="25" fill="#0a0a0a" stroke="#e74c3c" stroke-width="1.5"/>
+            <circle cx="100" cy="105" r="8" fill="#e74c3c" opacity="0.6"/>
+            <!-- Apex seals represented as small dots -->
+            <circle cx="100" cy="18" r="4" fill="#ff2d2d"/>
+            <circle cx="182" cy="148" r="4" fill="#ff2d2d"/>
+            <circle cx="18" cy="148" r="4" fill="#ff2d2d"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ROTARY DIVIDER ====== -->
+  <div class="rotary-divider">
+    <div class="rotary-divider-line"></div>
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="rotor-spin-slow">
+      <path d="M50 10 L88 72 L12 72 Z" fill="none" stroke="#8b1a1a" stroke-width="2"/>
+      <circle cx="50" cy="51" r="8" fill="none" stroke="#8b1a1a" stroke-width="1.5"/>
+    </svg>
+    <div class="rotary-divider-line"></div>
+  </div>
+
+  <!-- ====== SERVICES ====== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header fade-in">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Rotary-Only Services</h2>
+        <p class="section-subtitle">
+          Every tool, every technique, every thought — dedicated exclusively to the Wankel rotary engine. No compromises.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card fade-in" id="service-rebuild">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3>Full Engine Rebuilds</h3>
+          <p>Complete 13B-RE, 13B-REW, and RENESIS teardown and rebuild with OEM or upgraded seals, bearings, and housings. Every engine dyno-tested.</p>
+          <div class="card-triangle"></div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card fade-in" id="service-porting">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Porting & Flow Work</h3>
+          <p>Street port, bridge port, and peripheral port modifications. CNC-precision intake and exhaust porting for maximum airflow and power gains.</p>
+          <div class="card-triangle"></div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card fade-in" id="service-turbo">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <h3>Turbo & Forced Induction</h3>
+          <p>Single turbo conversions, sequential turbo rebuilds, custom manifolds, and boost controller setups. From 300 to 600+ HP builds.</p>
+          <div class="card-triangle"></div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card fade-in" id="service-apex">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Apex Seal Replacement</h3>
+          <p>Precision apex seal, corner seal, and side seal replacement. We use only the highest quality ceramic or carbon seals for maximum longevity.</p>
+          <div class="card-triangle"></div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card fade-in" id="service-diagnostic">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Diagnostics & Tuning</h3>
+          <p>Compression testing, leak-down analysis, ECU tuning with Haltech & Adaptronic. Data logging and custom fuel maps for peak performance.</p>
+          <div class="card-triangle"></div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card fade-in" id="service-maintenance">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Preventive Maintenance</h3>
+          <p>Rotary-specific oil changes, premix systems, ignition upgrades, coolant seal inspections, and compression monitoring to keep your engine alive.</p>
+          <div class="card-triangle"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ROTARY DIVIDER ====== -->
+  <div class="rotary-divider">
+    <div class="rotary-divider-line"></div>
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="rotor-spin-slow">
+      <path d="M50 10 L88 72 L12 72 Z" fill="none" stroke="#8b1a1a" stroke-width="2"/>
+      <circle cx="50" cy="51" r="8" fill="none" stroke="#8b1a1a" stroke-width="1.5"/>
+    </svg>
+    <div class="rotary-divider-line"></div>
+  </div>
+
+  <!-- ====== FLEET / CARS ====== -->
+  <section class="fleet" id="fleet">
+    <div class="container">
+      <div class="fleet-header fade-in">
+        <span class="section-label">The Legends</span>
+        <h2 class="section-title">Cars We Specialize In</h2>
+        <p class="section-subtitle">
+          Three generations of Mazda rotary brilliance. Each one unique, each one demanding specialized knowledge we've mastered.
+        </p>
+      </div>
+
+      <div class="fleet-grid">
+        <!-- RX-7 FC -->
+        <div class="car-card fade-in" id="car-rx7-fc">
+          <div class="car-card-image">
+            <img src="/rx7-fc.png" alt="Mazda RX-7 FC3S" loading="lazy" />
+            <div class="car-card-overlay"></div>
+            <div class="car-card-badge">
+              <svg viewBox="0 0 50 50" width="12" height="12"><path d="M25 5 L45 37 L5 37 Z" fill="#e74c3c"/></svg>
+              2ND GEN
+            </div>
+          </div>
+          <div class="car-card-info">
+            <h3 class="car-card-name">Mazda RX-7 FC3S</h3>
+            <p class="car-card-engine">13B-T Turbo Rotary • 1985–1992</p>
+            <div class="car-card-specs">
+              <div class="car-spec">
+                <div class="car-spec-value">200</div>
+                <div class="car-spec-label">HP Stock</div>
+              </div>
+              <div class="car-spec">
+                <div class="car-spec-value">1.3L</div>
+                <div class="car-spec-label">2-Rotor</div>
+              </div>
+              <div class="car-spec">
+                <div class="car-spec-value">450+</div>
+                <div class="car-spec-label">HP Tuned</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RX-7 FD -->
+        <div class="car-card fade-in" id="car-rx7-fd">
+          <div class="car-card-image">
+            <img src="/rx7-fd.png" alt="Mazda RX-7 FD3S" loading="lazy" />
+            <div class="car-card-overlay"></div>
+            <div class="car-card-badge">
+              <svg viewBox="0 0 50 50" width="12" height="12"><path d="M25 5 L45 37 L5 37 Z" fill="#e74c3c"/></svg>
+              3RD GEN
+            </div>
+          </div>
+          <div class="car-card-info">
+            <h3 class="car-card-name">Mazda RX-7 FD3S</h3>
+            <p class="car-card-engine">13B-REW Twin Turbo • 1992–2002</p>
+            <div class="car-card-specs">
+              <div class="car-spec">
+                <div class="car-spec-value">276</div>
+                <div class="car-spec-label">HP Stock</div>
+              </div>
+              <div class="car-spec">
+                <div class="car-spec-value">1.3L</div>
+                <div class="car-spec-label">2-Rotor</div>
+              </div>
+              <div class="car-spec">
+                <div class="car-spec-value">600+</div>
+                <div class="car-spec-label">HP Tuned</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RX-8 -->
+        <div class="car-card fade-in" id="car-rx8">
+          <div class="car-card-image">
+            <img src="/rx8.png" alt="Mazda RX-8" loading="lazy" />
+            <div class="car-card-overlay"></div>
+            <div class="car-card-badge">
+              <svg viewBox="0 0 50 50" width="12" height="12"><path d="M25 5 L45 37 L5 37 Z" fill="#e74c3c"/></svg>
+              RENESIS
+            </div>
+          </div>
+          <div class="car-card-info">
+            <h3 class="car-card-name">Mazda RX-8</h3>
+            <p class="car-card-engine">13B-MSP RENESIS • 2003–2012</p>
+            <div class="car-card-specs">
+              <div class="car-spec">
+                <div class="car-spec-value">232</div>
+                <div class="car-spec-label">HP Stock</div>
+              </div>
+              <div class="car-spec">
+                <div class="car-spec-value">1.3L</div>
+                <div class="car-spec-label">2-Rotor</div>
+              </div>
+              <div class="car-spec">
+                <div class="car-spec-value">400+</div>
+                <div class="car-spec-label">HP Tuned</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT / WHY US ====== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-image fade-in">
+        <img src="/rotor.png" alt="Wankel rotary engine rotor" loading="lazy" />
+        <div class="about-image-overlay"></div>
+        <div class="about-image-badge">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 10 L88 72 L12 72 Z" fill="#e74c3c" opacity="0.8"/>
+            <circle cx="50" cy="51" r="10" fill="#0a0a0a"/>
+            <circle cx="50" cy="51" r="4" fill="#e74c3c"/>
+          </svg>
+          <span>Rotor Perfection</span>
+        </div>
+      </div>
+
+      <div class="about-content fade-in">
+        <span class="section-label">Why RotaryWorks</span>
+        <h2 class="section-title">Born From<br/>Obsession</h2>
+        <p class="section-subtitle">
+          We didn't choose rotary — rotary chose us. For over two decades, we've dedicated our lives to understanding every revolution, every seal, every port of the Wankel engine.
+        </p>
+
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <h4>Rotary-Only Workshop</h4>
+              <p>100% dedicated to Wankel engines. No piston distractions — every tool and part is rotary-specific.</p>
+            </div>
+          </div>
+
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <div>
+              <h4>OEM & Aftermarket Parts</h4>
+              <p>Direct sourcing from Japan. Genuine Mazda parts alongside premium aftermarket from Goopy, Atkins, and Racing Beat.</p>
+            </div>
+          </div>
+
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <h4>Community Driven</h4>
+              <p>Active in Chile's rotary community. We host meets, share knowledge, and keep the Wankel spirit alive in South America.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ROTARY DIVIDER ====== -->
+  <div class="rotary-divider">
+    <div class="rotary-divider-line"></div>
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="rotor-spin-slow">
+      <path d="M50 10 L88 72 L12 72 Z" fill="none" stroke="#8b1a1a" stroke-width="2"/>
+      <circle cx="50" cy="51" r="8" fill="none" stroke="#8b1a1a" stroke-width="1.5"/>
+    </svg>
+    <div class="rotary-divider-line"></div>
+  </div>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header fade-in">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-subtitle">
+          Real stories from real rotary enthusiasts who trusted us with their beloved machines.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in" id="testimonial-1">
+          <div class="testimonial-stars">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-text">"They brought my FD3S back from the dead. The 13B-REW rebuild was flawless — pulls like a rocket now. These guys genuinely understand rotary engines on another level."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div>
+              <div class="testimonial-name">Matías R.</div>
+              <div class="testimonial-car">RX-7 FD3S Owner</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in" id="testimonial-2">
+          <div class="testimonial-stars">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-text">"My RX-8 had low compression and everyone told me to swap it. RotaryWorks rebuilt the RENESIS and it's running better than factory. Honest, skilled, and passionate."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">CF</div>
+            <div>
+              <div class="testimonial-name">Carlos F.</div>
+              <div class="testimonial-car">RX-8 Owner</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in" id="testimonial-3">
+          <div class="testimonial-stars">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-text">"Single turbo conversion on my FC was a dream. The custom manifold work, the tuning — everything was done right. 420whp on a stock block and it's been reliable for 2 years."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AS</div>
+            <div>
+              <div class="testimonial-name">Andrés S.</div>
+              <div class="testimonial-car">RX-7 FC3S Owner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== LOCATION ====== -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="location-content fade-in">
+        <span class="section-label">Find Us</span>
+        <h2 class="section-title">Visit Our Workshop</h2>
+        <p class="section-subtitle" style="margin-bottom: 36px;">
+          Located in the heart of Santiago, Chile. Bring your rotary to the specialists who live and breathe Wankel.
+        </p>
+
+        <div class="location-info">
+          <div class="location-detail">
+            <div class="location-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Address</h4>
+              <p>Av. Providencia, Santiago Centro<br/>Región Metropolitana, Chile</p>
+            </div>
+          </div>
+
+          <div class="location-detail">
+            <div class="location-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon – Fri: 9:00 AM – 7:00 PM<br/>Saturday: 9:00 AM – 2:00 PM</p>
+            </div>
+          </div>
+
+          <div class="location-detail">
+            <div class="location-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h4>Contact</h4>
+              <p>+56 9 1234 5678<br/>info@rotaryworks.cl</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="location-map fade-in">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26636.045893372027!2d-70.6506!3d-33.4489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Chile!5e0!3m2!1sen!2scl!4v1640000000000!5m2!1sen!2scl"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="RotaryWorks location in Santiago, Chile"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA / CONTACT ====== -->
+  <section class="cta" id="contact">
+    <div class="cta-glow"></div>
+    <div class="container">
+      <span class="section-label">Ready?</span>
+      <h2 class="section-title">Let Your Rotor<br/>Spin Again</h2>
+      <p class="section-subtitle">
+        Whether it's a rebuild, a tune, or a full restoration — we're ready when you are. Book your appointment and experience rotary excellence.
+      </p>
+
+      <div class="cta-buttons">
+        <a href="tel:+56912345678" class="btn-primary" id="cta-call">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Now
+        </a>
+        <a href="mailto:info@rotaryworks.cl" class="btn-outline" id="cta-email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Send Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+              <path d="M50 10 L88 72 L12 72 Z" fill="none" stroke="#e74c3c" stroke-width="3" stroke-linejoin="round"/>
+              <circle cx="50" cy="51" r="8" fill="none" stroke="#e74c3c" stroke-width="2"/>
+              <circle cx="50" cy="51" r="3" fill="#e74c3c"/>
+            </svg>
+            ROTARY<span class="logo-accent">WORKS</span>
+          </a>
+          <p>Santiago's premier Mazda rotary engine specialist. Dedicated exclusively to the art and engineering of the Wankel engine since 2005.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#services">Engine Rebuilds</a>
+          <a href="#services">Porting Work</a>
+          <a href="#services">Turbo Builds</a>
+          <a href="#services">Diagnostics</a>
+          <a href="#services">Maintenance</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Cars</h4>
+          <a href="#fleet">RX-7 FC3S</a>
+          <a href="#fleet">RX-7 FD3S</a>
+          <a href="#fleet">RX-8</a>
+          <a href="#fleet">Cosmo</a>
+          <a href="#fleet">Custom Builds</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#about">About Us</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#location">Location</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 RotaryWorks. All rights reserved. Brap brap brap.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</Layout>
