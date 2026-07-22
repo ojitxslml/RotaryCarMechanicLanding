@@ -1,43 +1,99 @@
-# Astro Starter Kit: Minimal
+# RotaryWorks | Expert Mazda Rotary Engine Mechanics Landing Page
 
-```sh
-npm create astro@latest -- --template minimal
-```
+**RotaryWorks** is a modern, high-performance, dark-themed landing page designed for a specialized Mazda Wankel/rotary engine mechanics workshop located in Santiago, Chile. Built using **Astro v5** and modern CSS custom properties, it delivers an immersive experience with dynamic animations, rotor-inspired visuals, service showcases, customer reviews, interactive FAQ, and direct booking CTA options.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## 🌟 Key Features & Sections
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Hero Section**: Dynamic spinning Wankel rotor graphics, key stats counter, dark aesthetic imagery (`rx7-fd.png`), and primary call-to-action buttons.
+- **Services Showcase**: Detailed breakdown of workshop services (Engine Rebuilds, Porting, ECU Tuning, Apex Seal Upgrades, Maintenance, Performance Upgrades).
+- **Vehicles & Engine Models**: Interactive cards highlighting Rotary platforms (13B-REW, 13B-DSP/Renesis, 20B-REW 3-Rotor, 12A).
+- **Interactive Engine Specs & Diagnostics**: Real-time compression calculator tool allowing owners to check rotor compression values.
+- **About Us & Workshop Philosophy**: Story, craftsmanship values, and technical expertise of the shop.
+- **Customer Testimonials**: Reviews and ratings from Mazda RX-7 & RX-8 owners.
+- **FAQ Accordion**: Interactive answers to common rotary engine maintenance and reliability questions.
+- **Location & Booking Contact Form**: Interactive location details, contact info, and booking form.
+
+---
+
+## 🏗️ Architecture & Technology Stack
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+       ┌────────────────────────────────────────────────────────┐
+       │                       Astro v5                         │
+       │     (Static Site Generation / Zero-JS by Default)      │
+       └───────────────────────────┬────────────────────────────┘
+                                   │
+         ┌─────────────────────────┼─────────────────────────┐
+         ▼                         ▼                         ▼
+  ┌──────────────┐         ┌──────────────┐         ┌──────────────┐
+  │ Astro Layout │         │ Astro Pages  │         │ Global CSS   │
+  │ Layout.astro │ ──────> │ index.astro  │ <─────> │  global.css  │
+  └──────────────┘         └──────────────┘         └──────────────┘
+                                   │
+                                   ▼
+                       ┌───────────────────────┐
+                       │  Static Build Output  │
+                       │       (./dist)        │
+                       └───────────┬───────────┘
+                                   │
+                                   ▼
+                       ┌───────────────────────┐
+                       │ GitHub Actions CI/CD  │
+                       │  (Deploy to Pages)    │
+                       └───────────────────────┘
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Core Technologies
+- **Framework**: [Astro 5](https://astro.build/) (Static Site Generator delivering zero client-side JavaScript overhead by default for UI structure).
+- **Styling**: Modern Vanilla CSS with custom properties (CSS variables), CSS grid, flexbox, glassmorphism UI, gradient overlays, and custom keyframe animations (`@keyframes`).
+- **Icons & Visuals**: Inline vector SVGs and optimized asset delivery via `import.meta.env.BASE_URL` compatibility.
+- **Deployment & CI/CD**: Automated GitHub Actions workflow (`.github/workflows/deploy.yml`) utilizing official `withastro/action` to build and publish to GitHub Pages.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+---
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 📁 Project Directory Structure
 
-## 🧞 Commands
+```text
+RotaryLanding/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml         # CI/CD pipeline for GitHub Pages deployment
+├── public/                    # Static public assets (images, favicon, etc.)
+│   └── rx7-fd.png             # Hero section background image
+├── src/
+│   ├── layouts/
+│   │   └── Layout.astro       # Root HTML shell, metadata, OpenGraph tags, Google Fonts
+│   ├── pages/
+│   │   └── index.astro        # Main single-page landing page containing all sections & logic
+│   └── styles/
+│       └── global.css         # Complete CSS design system, typography, animations & utilities
+├── astro.config.mjs           # Astro configuration (base path, site URL, GitHub Pages config)
+├── package.json               # Node.js dependencies & scripts (Node >= 22.12.0)
+└── tsconfig.json              # TypeScript configuration for Astro
+```
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 🧞 Available Scripts & Commands
 
-## 👀 Want to learn more?
+All commands are executed from the project root:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Command | Action |
+| :--- | :--- |
+| `npm install` | Installs project dependencies |
+| `npm run dev` | Starts local development server at `http://localhost:4321` |
+| `npm run build` | Builds static production files to the `./dist/` folder |
+| `npm run preview` | Previews the production build locally before deployment |
+| `npm run astro ...` | Runs Astro CLI commands (e.g. `astro check`, `astro add`) |
+
+---
+
+## 🚀 Deployment Pipeline
+
+The project is configured for automated deployment to **GitHub Pages**:
+- **Triggers**: Pushes to the `main` branch or manual invocation (`workflow_dispatch`).
+- **Node Requirement**: Node.js `22.12.0` or higher.
+- **Workflow**: Automated build via `@withastro/action@v3` and deployment via `@actions/deploy-pages@v4`.
+
